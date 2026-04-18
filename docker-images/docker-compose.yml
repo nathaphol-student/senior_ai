@@ -1,0 +1,13 @@
+services:
+  medicine-model:
+    build: .
+    container_name: medicine-model
+    ports:
+      - "8084:8084"
+    environment:
+      CONF_THRES: "0.12"
+      IOU_THRES: "0.5"
+      MAX_POINTS: "7"
+      DEVICE: "cpu"
+      PORT: "8084"
+    restart: unless-stopped

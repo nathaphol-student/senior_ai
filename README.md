@@ -1,1 +1,17 @@
-# Senior AI
+# Kaggle Competition “หุ่นยนต์ TM หยิบยา”
+
+### Team "Senior AI"
+
+1. Tanut Apiwong, EGCO/M 6838839
+2. Nathaphol Khingthong, EGCO/M 6838039
+3. Nattapat Onkaew, EGCO/M 6836996
+
+### How to run
+
+1. Clone this git repository
+2. `cd docker-images`
+3. In the `docker-compose.yml` file, the default of device is `cpu`, if you have CUDA device, please set to `cuda:0` or `0`
+4. `docker compose up --build`
+5. Open your browser, `http://localhost:8084/docs`
+6. API endpoint for the Cobot: `http://localhost:8084/model` --> return an `x,y` coordinate
+7. API endpoint for debugging: `http://localhost:8084/model_visualize` --> return image with detected bounding boxes and keypoints
