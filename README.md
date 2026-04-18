@@ -10,7 +10,7 @@
 
 1. Clone this git repository
 2. `cd docker-images`
-3. In the `docker-compose.yml` file, the default of device is `cpu`, if you have CUDA device, please set to `cuda:0` or `0`
+3. In the `docker-compose.yml` file, the default device is `cpu`, if you have a CUDA device, please set to `cuda:0` or `0`
 4. `docker compose up --build`
 5. Open your browser, `http://localhost:8084/docs`
 6. API endpoint for the Cobot: `http://localhost:8084/model` --> return an `x,y` coordinate
