@@ -10,7 +10,7 @@
 
 1. Clone this git repository
 2. `cd docker-images`
-3. Build docker file with image name "medical-ai-service" and tag "latest"
+3. Build docker file with image name `medical-ai-service` and tag `latest`
 4. In the `docker-compose.yml` file, the default device is `cpu`, if you have a CUDA device, please set to `cuda:0` or `0`
 5. `docker compose up`
 6. Open your browser, `http://localhost:8084/docs`
