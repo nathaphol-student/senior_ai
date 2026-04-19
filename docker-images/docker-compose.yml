@@ -1,6 +1,7 @@
 services:
   medicine-model:
-    build: .
+    # build: .
+    image: medical-ai-service:latest #image-name
     container_name: medicine-model
     ports:
       - "8084:8084"
